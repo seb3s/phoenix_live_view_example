@@ -8,7 +8,7 @@ defmodule DemoWeb.Router do
     plug :fetch_live_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
-    plug :put_live_layout, {DemoWeb.LayoutView, :app}
+    #plug :put_live_layout, {DemoWeb.LayoutView, :app}
   end
 
   pipeline :bare do
@@ -25,20 +25,21 @@ defmodule DemoWeb.Router do
 
   # If enabling the LiveDashboard in prod,
   # put it behind proper authentication.
-  if Mix.env() == :dev do
-    import Phoenix.LiveDashboard.Router
-
-    scope "/" do
-      pipe_through :browser
-      live_dashboard "/dashboard", metrics: DemoWeb.Telemetry
-    end
-  end
+#  if Mix.env() == :dev do
+#    import Phoenix.LiveDashboard.Router
+#
+#    scope "/" do
+#      pipe_through :browser
+#      live_dashboard "/dashboard", metrics: DemoWeb.Telemetry
+#    end
+#  end
 
   scope "/", DemoWeb do
     pipe_through :browser
 
     get "/", PageController, :index
 
+    live "/bug685", Bug685Live, session: %{"page" => "dashboard"}
     live "/thermostat", ThermostatLive
     live "/search", SearchLive
     live "/clock", ClockLive

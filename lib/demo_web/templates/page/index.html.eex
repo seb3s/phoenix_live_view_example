@@ -7,6 +7,7 @@
   <article class="column">
     <h4>LiveView Examples</h4>
     <ul>
+      <li><%= link "Bug 685", to: Routes.live_path(@conn, DemoWeb.Bug685Live) %></li>
       <li><%= link "Thermostat", to: Routes.live_path(@conn, DemoWeb.ThermostatLive) %></li>
       <li><%= link "Snake", to: Routes.live_path(@conn, DemoWeb.SnakeLive) %></li>
       <li><%= link "Search with autocomplete", to: Routes.live_path(@conn, DemoWeb.SearchLive) %></li>
@@ -20,7 +21,6 @@
       <li><%= link "Rainbow", to: Routes.live_path(@conn, DemoWeb.RainbowLive) %></li>
       <li><%= link "Top", to: Routes.live_path(@conn, DemoWeb.TopLive) %></li>
       <li><%= link "Presence Example", to: Routes.live_path(@conn, DemoWeb.UserLive.PresenceIndex, "user#{System.unique_integer([:positive])}") %></li>
-      <li><%= link "Live Dashboard", to: Routes.live_dashboard_path(@conn, :home) %></li>
     </ul>
   </article>
 </section>

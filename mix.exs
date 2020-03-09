@@ -36,8 +36,9 @@ defmodule Demo.Mixfile do
       {:telemetry_metrics, ">= 0.0.0"},
       {:telemetry_poller, ">= 0.0.0"},
       # Let the dashboard bring phoenix_live_view
-      # {:phoenix_live_view, "~> 0.9.0-dev"},
-      {:phoenix_live_dashboard, phoenix_live_dashboard_opts()},
+      {:phoenix, "~> 1.4.14"},
+      {:phoenix_live_view, "~> 0.8.1"},
+      #{:phoenix_live_dashboard, phoenix_live_dashboard_opts()},
       {:plug_cowboy, "~> 2.0"},
       {:plug, "~> 1.8"},
       {:phoenix_pubsub, "~> 1.1"},

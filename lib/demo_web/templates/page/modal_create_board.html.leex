@@ -1,0 +1,17 @@
+<%= if @show_modal do %>
+<div class="modal is-open" id="modal_create_board" phx-hook="show_modal">
+  <div class="modal-background" data-micromodal-close></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <h2 class="modal-card-title">Create a board</h2>
+    </header>
+    <section class="modal-card-body">
+      Modal content
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-primary" form="form_board" type="submit">Valider</button>
+      <button class="button" data-micromodal-close>Annuler</button>
+    </footer>
+  </div>
+</div>
+<% end %>
