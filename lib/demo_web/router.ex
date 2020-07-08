@@ -26,6 +26,7 @@ defmodule DemoWeb.Router do
 
     get "/", PageController, :index
 
+    live "/bug", BugLive, session: %{"page" => "dashboard"}
     live "/thermostat", ThermostatLive
     live "/search", SearchLive
     live "/clock", ClockLive

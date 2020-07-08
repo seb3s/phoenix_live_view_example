@@ -5,7 +5,7 @@ defmodule Demo.Application do
 
   def start(_type, _args) do
     children = [
-      Demo.Repo,
+      #Demo.Repo,
       DemoWeb.Telemetry,
       DemoWeb.Endpoint,
       DemoWeb.Presence

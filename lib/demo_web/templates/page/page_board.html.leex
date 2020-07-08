@@ -1,0 +1,7 @@
+<div class="buttons">
+  <button class="button is-primary" phx-click="view_dashboard">View dashboard</button>
+</div>
+
+<%= for column <- @columns do %>
+  <%= live_component(@socket, DemoWeb.ColumnComponent, id: "column_#{column.id}", column: column) %>
+<% end %>

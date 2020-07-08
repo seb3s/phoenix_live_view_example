@@ -37,15 +37,15 @@ defmodule Demo.Mixfile do
       {:telemetry_poller, ">= 0.0.0"},
       # Let the dashboard bring phoenix_live_view
       # {:phoenix_live_view, ">= 0.0.0"},
-      {:phoenix_live_dashboard, "~> 0.2.0"},
-      {:plug_cowboy, "~> 2.0"},
+      {:phoenix_live_dashboard, "~> 0.2.7"},
+      {:plug_cowboy, "~> 2.3"},
       {:plug, "~> 1.8"},
       {:phoenix_pubsub, "~> 1.1"},
       {:phoenix_ecto, "~> 4.0"},
       {:ecto_sql, "~> 3.3"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 2.14"},
-      {:phoenix_live_reload, "~> 1.0", only: :dev},
+      {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:nimble_strftime, ">= 0.0.0"}
