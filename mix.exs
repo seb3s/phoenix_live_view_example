@@ -40,7 +40,7 @@ defmodule Demo.Mixfile do
       {:phoenix_live_dashboard, "~> 0.2.7"},
       {:plug_cowboy, "~> 2.3"},
       {:plug, "~> 1.8"},
-      {:phoenix_pubsub, "~> 1.1"},
+      {:phoenix, "~> 1.5.3"},
       {:phoenix_ecto, "~> 4.0"},
       {:ecto_sql, "~> 3.3"},
       {:postgrex, ">= 0.0.0"},
